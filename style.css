@@ -19,6 +19,21 @@ body {
 
 body {
     padding-inline: 2rem;
+    position: relative;
+}
+
+/* custom cursor */
+#minicircle{
+    opacity: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    z-index: 99999;
+    /* transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s; */
+    transition: all linear 0.1s;
+    mix-blend-mode: difference;
 }
 
 /* Hearder Section */
@@ -107,10 +122,18 @@ body {
 }
 
 .profilesecText {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid white;
+}
+
+.profilesec img{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    height: 200px;
 }
 
 .profilesecText:last-child {

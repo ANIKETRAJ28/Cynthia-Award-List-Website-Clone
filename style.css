@@ -1,0 +1,196 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+
+html,
+body {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+/* Utility Class */
+
+
+body {
+    padding-inline: 2rem;
+}
+
+/* Hearder Section */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 40px;
+}
+
+.nav i {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/* Main Section */
+
+.mainSec {
+    margin-block: 100px;
+    text-transform: uppercase;
+}
+
+.main {
+    font-weight: 900;
+    margin-block: 100px;
+    line-height: 0.9;
+}
+
+.main h1 {
+    font-size: 10vw;
+    opacity: 0.7;
+}
+
+#main2 {
+    margin-left: 6vw;
+    width: fit-content;
+}
+
+#main2 h4 {
+    font-size: 1vw;
+    margin-block: 2vw;
+    text-align: end;
+}
+
+.mainFooter1 {
+    margin-block: 10px;
+    line-height: 2;
+    text-align: end;
+}
+
+.mainfooter2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mainfooter2-1,
+#mainfooter2-2 {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mainfooter2-2 {
+    justify-content: flex-end;
+}
+
+#mainfooter2-2 i {
+    font-size: 30px;
+    opacity: 0.7;
+}
+
+/* Profile Section */
+.profilesec {
+    width: 92%;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.profilesec h1 {
+    font-size: 5vw;
+    font-weight: 900;
+    padding-block: 50px;
+}
+
+.profilesecText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid white;
+}
+
+.profilesecText:last-child {
+    border-bottom: 1px solid white;
+}
+
+#year {
+    font-size: 1vw;
+}
+
+/* About Section */
+.about {
+    margin-top: 200px;
+    height: 50vh;
+    display: flex;
+    gap: 80px;
+    width: 92%;
+}
+
+.about img {
+    width: 220px;
+    height: 220px;
+}
+
+.about p {
+    line-height: 1.5;
+}
+
+.about a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.about .btn {
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid white;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+.aboutHeading {
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+/* footer section */
+
+.footer {
+    text-transform: uppercase;
+}
+
+.footer1 {
+    margin-bottom: 150px;
+}
+
+.footer1 div {
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.footer2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.space {
+    padding: 0px 20px;
+    font-weight: 900;
+}
+
+#spacergt {
+    padding-right: 0px;
+}
+
+#spacelft {
+    padding-left: 0px;
+}
+#demo{
+    height: 100vh;
+}

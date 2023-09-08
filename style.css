@@ -23,7 +23,7 @@ body {
 }
 
 /* custom cursor */
-#minicircle{
+#minicircle {
     opacity: 0;
     height: 10px;
     width: 10px;
@@ -34,6 +34,29 @@ body {
     /* transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s; */
     transition: all linear 0.1s;
     mix-blend-mode: difference;
+}
+
+/* animation */
+.bottom-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.topdown {
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+.bottom-up h1,
+.bottom-up h4 {
+    transform: translateY(100%);
+}
+
+#topele {
+    transform: translateY(-100%);
 }
 
 /* Hearder Section */
@@ -75,7 +98,7 @@ body {
 
 #main2 h4 {
     font-size: 1vw;
-    margin-block: 2vw;
+    line-height: 25px;
     text-align: end;
 }
 
@@ -129,7 +152,7 @@ body {
     border-top: 1px solid white;
 }
 
-.profilesec img{
+.profilesec img {
     display: none;
     position: absolute;
     z-index: 999;
@@ -214,6 +237,7 @@ body {
 #spacelft {
     padding-left: 0px;
 }
-#demo{
+
+#demo {
     height: 100vh;
 }

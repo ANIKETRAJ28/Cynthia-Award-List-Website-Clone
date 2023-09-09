@@ -24,7 +24,6 @@ body {
 
 /* custom cursor */
 #minicircle {
-    opacity: 0;
     height: 10px;
     width: 10px;
     border-radius: 50%;
@@ -34,6 +33,10 @@ body {
     /* transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s; */
     transition: all linear 0.1s;
     mix-blend-mode: difference;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
 }
 
 /* animation */
@@ -47,7 +50,6 @@ body {
 
 .topdown {
     overflow: hidden;
-    /* background-color: red; */
 }
 
 .bottom-up h1,
@@ -133,15 +135,17 @@ body {
 
 /* Profile Section */
 .profilesec {
-    width: 92%;
-    text-transform: uppercase;
-    opacity: 0.7;
+    color: #fff;
+    padding-right: 10vw;
+    padding-block: 200px;
+    background-color: black;
+    width: 100%;
 }
 
 .profilesec h1 {
-    font-size: 5vw;
-    font-weight: 900;
-    padding-block: 50px;
+    text-transform: uppercase;
+    font-size: 7.6vw;
+    opacity: .7;
 }
 
 .profilesecText {
@@ -149,14 +153,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid white;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
 }
 
-.profilesec img {
-    display: none;
-    position: absolute;
+.profilesecText img {
+    opacity: 0;
+    pointer-events: none;
+    height: 120%;
     z-index: 999;
-    height: 200px;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
 .profilesecText:last-child {
@@ -169,7 +178,6 @@ body {
 
 /* About Section */
 .about {
-    margin-top: 200px;
     height: 50vh;
     display: flex;
     gap: 80px;
